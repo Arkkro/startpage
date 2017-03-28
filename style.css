@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'hax';
+    /*src: url('https://puu.sh/v0yir/0a1a792a03.ttf'); */
+    font-family: 'haxrcorpttf';
+    src: url("haxrcorpttf.ttf");
+}
+
+html {
+    background: url(blank.jpg);
+    font-family: 'haxrcorpttf';
+}
+
+.maincontainer {
+    height: 600px;
+    width: 500px;
+    background-color: #888888;
+}
