@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'hax';
-    /*src: url('https://puu.sh/v0yir/0a1a792a03.ttf'); */
-    src: url("haxrcorpttf.ttf");
+    src: url('https://puu.sh/v0yir/0a1a792a03.ttf');
+    /*src: url("haxrcorpttf.ttf");*/
 }
 :root{
   --textcolor: #f9e1a4;
@@ -13,7 +13,7 @@
 html {
     background-size: 5%;
     background: url(resources/wp.jpg);
-    font-family: 'hax', monospace;
+    font-family: 'hax';
     color: var(--textcolor);
     text-align: left;                                                            ;
 }
