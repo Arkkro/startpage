@@ -1,17 +1,71 @@
 @font-face {
     font-family: 'hax';
     /*src: url('https://puu.sh/v0yir/0a1a792a03.ttf'); */
-    font-family: 'haxrcorpttf';
     src: url("haxrcorpttf.ttf");
 }
-
+:root{
+  --textcolor: #f9e1a4;
+  --main1: #a9ad8c;
+  --accent1: #43473a;
+  --accent2: #616851;
+  --accent3: #d3c18f;
+}
 html {
-    background: url(blank.jpg);
-    font-family: 'haxrcorpttf';
+    background-size: 5%;
+    background: url(resources/wp.jpg);
+    font-family: 'hax', monospace;
+    color: var(--textcolor);
+    text-align: left;                                                            ;
 }
 
-.maincontainer {
-    height: 600px;
+#main1 {
+    margin-top: 4%;
+    margin-left: 22%;
+    border-left: 2px solid var(--accent1);
+    border-right: 2px solid var(--accent1);
+    border-bottom: 2px solid var(--accent1);
+    border-top: 45px solid var(--accent1);
+    height: 220px;
     width: 500px;
-    background-color: #888888;
+    background-color: var(--main1);
+    box-shadow: 3px 3px 3px #252525;
+}
+#log {
+  height: 140px;
+  width: 500px;
+  background-color: var(--accent2);
+  /* box-shadow: 1px 1px 1px #252525; */
+  margin: auto;
+}
+#consolebox {
+  height: 50px;
+  width: 500px;
+  border-left: 2px solid var(--accent1);
+  border-right: 2px solid var(--accent1);
+  border-bottom: 2px solid var(--accent1);
+  border-top: 2px solid var(--accent1);
+  background-color: var(--accent1);
+  margin-left: -1.5px;
+  /*margin-top: center;*/
+  vertical-align: text-top;
+}
+#consoletext {
+  vertical-align: text-top;
+}
+
+#main2{
+  height: 200px;
+  width: 200px;
+  background-color: var(--main1);
+  margin-left: -50%;
+  border-left: 2px solid var(--accent1);
+  border-right: 2px solid var(--accent1);
+  border-bottom: 2px solid var(--accent1);
+  border-top: 45px solid var(--accent1);
+  box-shadow: 3px 3px 3px #252525;
+
+}
+.time {
+  margin-top: -9.5%;
+  margin-left: 15%;
 }
