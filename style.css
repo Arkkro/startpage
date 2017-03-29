@@ -15,7 +15,8 @@ html {
     background: url(src/wp.jpg);
     font-family: 'hax';
     color: var(--textcolor);
-    text-align: left;                                                            ;
+    text-align: left;
+    font-size: 1.2 em;
 }
 
 #main1 {
@@ -29,6 +30,15 @@ html {
     width: 500px;
     background-color: var(--main1);
     box-shadow: 3px 3px 3px #252525;
+}
+#search {
+  background-color: var(--accent1);
+  color: var(--textcolor);
+  border: none;
+  height: 30px;
+  font-family: 'hax';
+  width: 100px;
+  text-align: center;
 }
 #log {
   height: 140px;
