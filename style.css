@@ -73,13 +73,14 @@ html {
     vertical-align: text-top;
     color: var(--textcolor);
     height: 50px;
-    width: 502.5px;
+    width: 500px;
     box-shadow: 3px 3px 3px #252525;
     border-left: 3px solid var(--accent1);
     border-right: 3px solid var(--accent1);
     border-bottom: 3px solid var(--accent1);
     border-top: 3px solid var(--accent1);
     margin-top: -2%;
+    margin-left: 0px;
 }
 
 #consoleinput {
