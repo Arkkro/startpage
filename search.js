@@ -1,5 +1,6 @@
 var input = document.getElementById('search')
-input.addEventListener(onsubmit, search)
+var focused
+input.addEventListener(onfocus, search())
 
 function search() {
   console.log("Passed");
