@@ -25,7 +25,13 @@ code {
     font-family: 'hax';
     color: var(--textcolor);
     text-align: left;
-    font-size: 1.2 em;
+    font-size: 1.7 em;
+}
+pre {
+  font-family: 'hax';
+  color: var(--textcolor);
+  text-align: left;
+  font-size: 1.9 em;
 }
 
 #text {
@@ -53,7 +59,7 @@ code {
     border-bottom: 2px solid var(--accent1);
     border-top: 45px solid var(--accent1);
     height: 450px;
-    width: 600px;
+    width: 750px;
     background-color: var(--accent2);
     box-shadow: 3px 3px 3px #252525;
 }

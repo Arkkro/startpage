@@ -10,17 +10,19 @@
 	<div class="main" id="main3">
 		<p>The following feature is one of the commands on my website. The command lists all the other commands you can use on the website. All the commands are listed in a array When the other code returns the variable command to equal “ls” it will execute the following code.</p>
 		<pre><code>
-		var programList = ["help", "clear", "ls", "plp", "amazon", "tumblr", "dA", "/ic/"];
+		var programList = ["help", "clear", "ls", "plp", "amazon", "tumblr", "dA", "/ic/"]; //array that's a string list of all the cammands I have
 
 			function execCommand() {
-		     if (command == "ls") {
-		        //commandLog = user + " " + "help" + "&lt;br&gt;" + user + " " + "clear" + "&lt;br&gt; + ....."
-		        commandLog = "";
+		     if (command == "ls") { //checks if the command typed in is "ls"
+		        //commandLog = user + " " + "help" + "&lt;br&gt;" + user + " " + "clear" + "&lt;br&gt; + ....." &lt;- The old ineffincent method
+		        commandLog = ""; //clears the commandLog so there isn't old data from an old command
+						// this loop goes through the array of programs and sets a varible that adds to the old commandLog
 		        for (var i = 0; i < programList.length; i++) {
-		            var commandLogAdd = user + " " + "\"" + programList[i] + "\"" + "&lt;br&gt;"
-		            commandLog = commandLog + commandLogAdd;
+		            var commandLogAdd = user + " " + "\"" + programList[i] + "\"" + "&lt;br&gt;" // adds the i'th entry plus other formatting to the varible
+		            commandLog = commandLog + commandLogAdd; // creates a new commandLog based on the older comand log and adds the new entry to the list
 		        }
-		        brCount = brCount + programList.length;
+		        brCount = brCount + programList.length; // because each "i" of an array adds one &lt;br&gt; this varible make sures to account for them
+						// brCount is later refrenced by a function called scaleTerm() which scales the terminal based on how many new lines in the console are
 		    }
 		}</code></pre>
 	</div>
