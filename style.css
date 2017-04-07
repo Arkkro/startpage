@@ -21,6 +21,13 @@ html {
     font-size: 1.2 em;
 }
 
+code {
+    font-family: 'hax';
+    color: var(--textcolor);
+    text-align: left;
+    font-size: 1.2 em;
+}
+
 #text {
     font-size: 1.7 em;
 }
@@ -35,6 +42,19 @@ html {
     height: 221px;
     width: 500px;
     background-color: var(--main1);
+    box-shadow: 3px 3px 3px #252525;
+}
+
+#main3 {
+    margin-top: 4%;
+    margin-left: 22%;
+    border-left: 2px solid var(--accent1);
+    border-right: 2px solid var(--accent1);
+    border-bottom: 2px solid var(--accent1);
+    border-top: 45px solid var(--accent1);
+    height: 450px;
+    width: 600px;
+    background-color: var(--accent2);
     box-shadow: 3px 3px 3px #252525;
 }
 
@@ -105,7 +125,7 @@ html {
     height: 200px;
     width: 200px;
     background-color: var(--main1);
-    margin-left: -50%;
+    margin-left: 900px;
     border-left: 2px solid var(--accent1);
     border-right: 2px solid var(--accent1);
     border-bottom: 2px solid var(--accent1);

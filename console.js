@@ -5,7 +5,7 @@ var user = document.getElementById("user");
 var mainbox = document.getElementById("main1");
 var initLog = log;
 var brCount = 0;
-programList = ["help", "clear", "programList", "plp", "amazon", "tumblr", "dA", "/ic/"];
+programList = ["help", "clear", "ls", "plp", "amazon", "tumblr", "dA", "/ic/"];
 
 // var userList = [];
 
@@ -17,11 +17,20 @@ function addLog() {
     if (command != "clear") {
         log.innerHTML = log.innerHTML + commandLog;
         // alert("anything, doesn't matter");
+        term.value = "";
     }
 }
+
 function scaleTerm() {
-    var scale = brCount *14;
-    log.style.height(500 + scale);
+    var scale = (brCount - 7) * 19;
+    console.log(scale);
+    log.style.height = (168 + scale);
+    main1.style.height = (221 + scale);
+
+    if (command == "clear") {
+        log.style.height = (168);
+        main1.style.height = (221);
+    }
 }
 // function ex
 // function readCookie() {
@@ -29,12 +38,12 @@ function scaleTerm() {
 // }
 
 function execCommand() {
-    // console.log(term.value);
     if (command == "") {
         commandLog = user + "<br>"
         brCount = brCount + 1;
     } else if (command == "clear") {
         log.innerHTML = "";
+        brCount = 0;
     } else if (command == "ls") {
         // commandLog = user + " " + "help" + "<br>" + user + " " + "clear" + "<br>"
         commandLog = "";
@@ -77,8 +86,8 @@ function execCommand() {
         window.open("https://boards.4chan.org/ic/")
         commandLog = user + " " + command + "<br>"
         brCount = brCount + 1;
-    } else if (command == "commandName") {
-        window.open("link")
+    } else if (command == "howto") {
+        window.open(howto.html)
         commandLog = user + " " + command + "<br>"
         brCount = brCount + 1;
     }
@@ -101,15 +110,15 @@ function execCommand() {
     }
 }
 term.addEventListener("keydown", function(evt) {
-    if (evt.keyCode === 13) {
-        command = term.value;
-        execCommand();
-        addLog();
-        if (brCount >= 7) {
-          scaleTerm();
-          // alert("test");
+        if (evt.keyCode === 13) {
+            command = term.value;
+            execCommand();
+            addLog();
+            if (brCount >= 7 || command == "clear") {
+                scaleTerm();
+                // alert("test");
+            }
+            term.value = "";
         }
-        term.value = "";
-    }
-})
-// consoletext.innerHTML =
+    })
+    // consoletext.innerHTML =
